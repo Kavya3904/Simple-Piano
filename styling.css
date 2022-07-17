@@ -1,0 +1,308 @@
+
+body{
+    background-color: antiquewhite;
+    display: block;
+}
+
+
+
+
+
+
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ text-align: center;
+
+}
+#keyboard-name{
+    text-align: center;
+    background-color: aliceblue;
+width: 70px;
+margin-left: 470px;
+margin-bottom: 60px;
+border: 2px solid black;
+border-radius: 10px;
+}
+
+.piano-displying-div {
+    display: block;
+    overflow: visible;
+    background-color: goldenrod;
+    width: 1000px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    border-radius: 20px;
+    margin: 200px 400px;
+}
+
+
+
+.piano-key-wraper {
+    border-radius: 10px;
+    overflow: visible;
+    /* position: absolute; */
+    margin-left: 100px;
+    background-color: black;
+    width: 800px;
+    height: 350px;
+    display: flex;
+
+
+}
+
+.piano-key-wraper div {
+
+    flex: 8;
+}
+
+                                   /* White key note styling */
+.white-keyC {
+    overflow: visible;
+    transition: ease-in-out -2s;
+
+
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    width: 72px;
+    height: 350px;
+}
+
+.white-keyD {
+    overflow: visible;
+    transition: ease-in-out -2s;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    width: 72px;
+    height: 350px;
+}
+
+.white-keyE {
+    overflow: visible;
+    transition: ease-in-out -2s;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    width: 72px;
+    height: 350px;
+}
+
+.white-keyF {
+    overflow: visible;
+    transition: ease-in-out -2s;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    width: 72px;
+    height: 350px;
+}
+
+.white-keyG {
+    overflow: visible;
+    transition: ease-in-out -2s;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    width: 72px;
+    height: 350px;
+}
+
+.white-keyH {
+    overflow: visible;
+    transition: ease-in-out -2s;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    width: 72px;
+    height: 350px;
+}
+
+.white-keyI {
+    overflow: visible;
+    transition: ease-in-out -2s;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    width: 72px;
+    height: 350px;
+}
+
+.white-keyJ {
+    overflow: visible;
+    transition: ease-in-out -2s;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    width: 72px;
+    height: 350px;
+}
+
+                                   /* white key active styling */
+.white-keyC.active {
+    height: 340px;
+}
+
+.white-keyD.active {
+    height: 340px;
+}
+
+.white-keyE.active {
+    height: 340px;
+}
+
+.white-keyF.active {
+    height: 340px;
+}
+
+.white-keyG.active {
+    height: 340px;
+}
+
+.white-keyH.active {
+    height: 340px;
+}
+
+.white-keyI.active {
+    height: 340px;
+}
+
+.white-keyJ.active {
+    height: 340px;
+}
+
+
+                               /* Black key note styling */
+
+.black-keyK {
+    transition: ease-in-out -2s;
+    position: absolute;
+    margin-left: 80px;
+    background-color: black;
+    width: 40px;
+    height: 200px;
+    border-radius: 10px;
+
+}
+.black-keyL {
+    transition: ease-in-out -2s;
+    position: absolute;
+    margin-left: 80px;
+    background-color: black;
+    width: 40px;
+    height: 200px;
+    border-radius: 10px;
+
+}
+.black-keyM {
+    transition: ease-in-out -2s;
+    position: absolute;
+    margin-left: 80px;
+    background-color: black;
+    width: 40px;
+    height: 200px;
+    border-radius: 10px;
+
+}
+.black-keyN {
+    transition: ease-in-out -2s;
+    position: absolute;
+    margin-left: 80px;
+    background-color: black;
+    width: 40px;
+    height: 200px;
+    border-radius: 10px;
+
+}
+.black-keyO {
+    transition: ease-in-out -2s;
+    position: absolute;
+    margin-left: 80px;
+    background-color: black;
+    width: 40px;
+    height: 200px;
+    border-radius: 10px;
+
+}
+                                /* black not key active styling */
+.black-keyK.active {
+    height: 190px;
+}
+.black-keyL.active {
+    height: 190px;
+}
+.black-keyJ.active {
+    height: 190px;
+}
+.black-keyM.active {
+    height: 190px;
+}
+.black-keyN.active {
+    height: 190px;
+}
+.black-keyO.active {
+    height: 190px;
+}
+
+
+
+                                        
+                                              /* Footer styling */
+
+
+
+
+
+
+
+
+
+
+.key-marking {
+	position: absolute;
+    right: 0;
+    top: 0;
+    height: 800px;
+    background: burlywood;
+    width: 250px;
+    z-index: 3;
+}
+
+.key-marking  > h2 {
+    text-align: center;
+	color: #fff;
+	font-family: 'Handlee', cursive;
+    color: rgb(59, 38, 38);
+	margin-bottom: 35px;
+	border-bottom: 1px solid #fff;
+    padding-bottom: 20px;
+}
+
+.key-list {
+    font-weight: bolder;
+	list-style: none;
+	color: rgb(59, 38, 38);
+	text-align: left;
+}
+
+.key-list > li {
+	margin-bottom: 25px;
+}
+
+.key-code {
+	color: #444;
+    background-color: #eaeaea;
+    font-size: 1.25em;
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 3px solid #aaa;
+}
+
+.key-sound {
+	font-size: 1.2em;
+	margin-left: 10px;
+	font-family: 'Handlee', cursive;
+	vertical-align: middle;
+}

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./styling.css">
+        <script src="./pinaojs.js"></script>
+    </head>
+    <body>
+
+
+
+    <h1 id="heading">
+        Play your favourite song 
+    </h1>
+    
+
+
+
+<main>
+  <div class="key-marking">
+    <h2>KEYS</h2>
+    <ul class="key-list">
+      <li>
+        <kbd class="key-code">A</kbd>
+        <span class="key-sound">C note</span>
+      </li>
+      <li>
+        <kbd class="key-code">W</kbd>
+        <span class="key-sound">C# note</span>
+      </li>
+      <li>
+        <kbd class="key-code">S</kbd>
+        <span class="key-sound">D note</span>
+      </li>
+      <li>
+        <kbd class="key-code">E</kbd>
+        <span class="key-sound">D# / Eb note</span>
+      </li>
+      <li>
+        <kbd class="key-code">D</kbd>
+        <span class="key-sound">E note</span>
+      </li>
+      <li>
+        <kbd class="key-code">F</kbd>
+        <span class="key-sound">F note</span>
+      </li>
+      <li>
+        <kbd class="key-code">T</kbd>
+        <span class="key-sound">F# note</span>
+      </li>
+      <li>
+        <kbd class="key-code">G</kbd>
+        <span class="key-sound">G note</span>
+      </li>
+      <li>
+        <kbd class="key-code">Y</kbd>
+        <span class="key-sound">G# note</span>
+      </li>
+      <li>
+        <kbd class="key-code">H</kbd>
+        <span class="key-sound">A note</span>
+      </li>
+      <li>
+        <kbd class="key-code">U</kbd>
+        <span class="key-sound">A# / Bb note</span>
+      </li>
+      <li>
+        <kbd class="key-code">J</kbd>
+        <span class="key-sound">B note</span>
+      </li>
+      <li>
+        <kbd class="key-code">K</kbd>
+        <span class="key-sound">C note</span>
+      </li>
+    </ul>
+  </div>
+  <!-- <div class=".key-marking">
+    <h2>KEYS</h2>
+    <ul class="key-map-list">
+      <li>
+        <kbd class="key-code">A</kbd>
+        <span class="key-sound">C note</span>
+      </li>
+      <li>
+        <kbd class="key-code">W</kbd>
+        <span class="key-sound">C# note</span>
+      </li>
+      <li>
+        <kbd class="key-code">S</kbd>
+        <span class="key-sound">D note</span>
+      </li>
+      <li>
+        <kbd class="key-code">E</kbd>
+        <span class="key-sound">D# / Eb note</span>
+      </li>
+      <li>
+        <kbd class="key-code">D</kbd>
+        <span class="key-sound">E note</span>
+      </li>
+      <li>
+        <kbd class="key-code">F</kbd>
+        <span class="key-sound">F note</span>
+      </li>
+      <li>
+        <kbd class="key-code">T</kbd>
+        <span class="key-sound">F# note</span>
+      </li>
+      <li>
+        <kbd class="key-code">G</kbd>
+        <span class="key-sound">G note</span>
+      </li>
+      <li>
+        <kbd class="key-code">Y</kbd>
+        <span class="key-sound">G# note</span>
+      </li>
+      <li>
+        <kbd class="key-code">H</kbd>
+        <span class="key-sound">A note</span>
+      </li>
+      <li>
+        <kbd class="key-code">U</kbd>
+        <span class="key-sound">A# / Bb note</span>
+      </li>
+      <li>
+        <kbd class="key-code">J</kbd>
+        <span class="key-sound">B note</span>
+      </li>
+      <li>
+        <kbd class="key-code">K</kbd>
+        <span class="key-sound">C note</span>
+      </li>
+    
+    </ul>
+   
+   </div> -->
+        <div class="piano-displying-div">
+        <h4 id="keyboard-name">CASINO</h4>
+            <div class="piano-key-wraper">
+                
+                <div class="white-keyC c-note" id="whitekeyC" >
+                    <div data-key="65" class="key c-sound">
+                       
+                      </div>
+                    <div class="black-keyK c-sharp-note" id="BlackeyK">
+                        <div data-key="87" class="key c-soundsharp" >
+                        
+                          </div>
+                    </div> 
+                </div>
+                
+                <div class="white-keyD d-note" id="whitekeyD">
+                    <div data-key="83" class="key d-sound">
+                        
+                      </div>
+                    <div class="black-keyL d-sharp-note"  id="BlackeyL">
+                        <div data-key="69" class="key d-soundsharp" >
+                            
+                          </div>
+                    </div>
+                </div>
+              
+                <div class="white-keyE e-note" id="whitekeyE">
+                    <div data-key="68" class="key e-sound">
+                        
+                      </div>
+                </div>
+                <div class="white-keyF f-note" id="whitekeyF" >
+                    <div data-key="70" class="key f-sound">
+                        
+                      </div>
+                    <div class="black-keyM f-sharp-note"  id="BlackeyM">
+                        <div data-key="84" class="key f-soundsharp" >
+                            
+                          </div>
+                    </div>
+                </div>
+                <div class="white-keyG g-note" id="whitekeyG">
+                    <div data-key="71" class="key g-sound">
+                        
+                      </div>
+                    <div class="black-keyN g-sharp-note"  id="BlackeyN">
+                        <div data-key="89" class="key g-soundsharp" >
+                            
+                          </div>
+                    </div>
+                </div>
+                <div class="white-keyH a-note" id="whitekeyH">
+                    <div data-key="72" class="key a-sound">
+                       
+                      </div>
+                    <div class="black-keyO a-sharp-note"  id="BlackeyO">
+                        <div data-key="85" class="key a-soundsharp" >
+                           
+                          </div>
+                    </div>
+                </div>
+                <div class="white-keyI b-note" id="whitekeyI">
+                    <div data-key="74" class="key b-sound">
+                        
+                      </div>
+                </div>
+                <div class="white-keyJ c-note" id="whitekeyJ">
+                    <div data-key="75" class="key cc-sound">
+                        
+                      </div>
+                </div>
+
+                
+
+
+            </div>
+
+          
+        </div>
+       
+      </main>
+
+      
+
+
+                                                <!-- white note audio adding -->
+        <audio data-key="65" src="note/C.mp3" ></audio>
+        <audio data-key="83" src="note/D.mp3" ></audio>
+        <audio data-key="68" src="note/E.mp3" ></audio>
+        <audio data-key="70" src="note/F.mp3" ></audio>
+        <audio data-key="71" src="note/G.mp3" ></audio>
+        <audio data-key="72" src="note/A.mp3" ></audio>
+        <audio data-key="74" src="note/B.mp3" ></audio>
+        <audio data-key="75" src="note/C.mp3" ></audio>
+                                                    <!-- Black note audio adding -->
+        <audio data-key="87" src="note/Db.mp3" ></audio>
+        <audio data-key="69" src="note/Eb.mp3" ></audio>
+        <audio data-key="84" src="note/Gb.mp3" ></audio>
+        <audio data-key="89" src="note/Ab.mp3" ></audio>
+        <audio data-key="85" src="note/Bb.mp3" ></audio>    
+        
+        
+
+
+        
+    </body>
+ 
+</html>
